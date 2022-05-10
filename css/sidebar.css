@@ -1,0 +1,28 @@
+body {
+  width: 980px;
+  margin: 0 auto;
+}
+.header {
+  height: 150px;
+  background-color: #009b9f;
+}
+.sidebar {
+  width: 250px;
+  min-height: 500px;
+  height: auto;
+  background-color: #009b9f;
+  float: right;
+  margin-top: 10px;
+}
+.content {
+  width: 720px;
+  min-height: 500px;
+  height: auto;
+  background-color: #009b9f;
+  margin-top: 10px;
+}
+.footer {
+  height: 100px;
+  background-color: #009b9f;
+  margin-top: 10px;
+}

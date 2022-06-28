@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../skins/sunburst.css">
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        hr {
+            height: 2px;
+            background-color: #000;
+            border: none
+        }
+
+        p {
+            text-align: center;
+        }
+
+        pre.prettyprint {
+            font-family: Monaco, Menlo, Consolas, 'Courier New', Courier, monospace, sans-serif;
+            background-color: #0E101E;
+            /* 背景色 */
+            border-top-left-radius: 0;
+            /* テーマの角丸の設定を上書き */
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .prettyprint ol {
+            margin: 0 1rem;
+            /* 間隔の調整 */
+            white-space: pre-wrap;
+            /* 折り返し */
+        }
+
+        .prettyprint ol.linenums>li {
+            list-style-type: decimal;
+            /* 行番号を1行ずつ表示 */
+            border-left: solid 1px #EBB15E;
+            /* 行番号との区切り線 */
+            padding-left: 0.8em;
+            /* 間隔の調整 */
+            color: #999;
+            /* 行番号の色 */
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>こんにちは</p>
+    <p>備忘録なので適当に書いて適当に整備します</p>
+    <br>
+    <p>さて本題のpythonでよく見る謎の__init__ですが、これ意外と便利です。</p>
+    <p>たぶんclass等の引数設定、初期化です。 initializationのinitかもね。</p>
+    <p>例の為に以下のように記述しました。<span style="color: #00cccc;">色付け適当すぎん?</span></p>
+    <pre class="prettyprint linenums">class test:
+    def __init__(self, string, num):
+        self.string = string
+        self.number = num
+
+    def print(self):
+        print(self.string)
+        twice_num = self.number*2
+        print("{} の倍は {} です。".format(self.number, twice_num))
+
+s = test("huroshokunin", 30)
+s.print()</pre>
+    <p>今回の場合は、testというクラスを作って見ました。</p>
+    <p>__init__は<b>コンストラクタ</b>と呼んで、print()を<b>メソッド</b>と呼ぶらしいです。</p>
+    <p>引数のselfはクラス内の変数を利用するために入れるインスタンス自身を指すものです。</p>
+    <p>他にも今回はstring, numという引数を設定しました。 また、print()関数には今回適当な処理を書いておきます。</p>
+    <p>そして11行目にtestクラスに引数を渡して、12行目でクラスs.print()という形で呼び出せます。</p>
+    <p>実行してみましょう。</p>
+    <div style="text-align: center;">
+        <img src="./img/init_result.png" alt="result">
+    </div>
+    <p>おっ、11行目で渡した"huroshokunin"の文字と30の数字が渡されて適切な表示がなされてます。</p>
+    <p>小さいコードなら問題ないのですが、大きいものになるとややこしくなるのでclass化して整理しましょうね。</p>
+    <hr>
+    <a href="./blog_index.html">戻る</a>
+    <script src="../js/prettify.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            PR.prettyPrint();
+        });
+    </script>
+</body>
+
+</html>

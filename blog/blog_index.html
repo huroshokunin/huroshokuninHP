@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="jp">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .center{
-            text-align: center;
+        body {
+            background-color: aqua;
+        }
+
+        hr {
+            height: 2px;
+            background-color: #000;
+            border: none
+        }
+
+        @media (min-width: 600px) {
+            #box {
+                display: flex;
+            }
+
+            #left {
+                flex-grow: 1;
+            }
+
+            #right {
+                flex-grow: 1;
+            }
         }
     </style>
     <title>Document</title>
 </head>
-<body>
-    <p class="center">まだなにもないけど何かを作ります</p>
-    <p class="center">一応備忘録置き場になりそう</p>
-    <a href="../index.html" class="center">戻る</a>
+
+<body style="text-align: center;">
+    <p>まだなにもないけど何かを作ります</p>
+    <p>一応備忘録置き場になりそう</p>
+    <hr>
+    <div id="box">
+        <div id="left">
+            <a href="./memo_py_1.html">備忘録1 python __init__ __name__</a>
+        </div>
+        <div id="right">
+            <a href="../errorpage/404.html">工事中</a>
+        </div>
+    </div>
+    <hr>
+    <a href="../index.html">戻る</a>
 </body>
+
 </html>

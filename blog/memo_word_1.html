@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../skins/sunburst.css">
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        hr {
+            height: 2px;
+            background-color: #000;
+            border: none
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            width: 25%;
+            height: 25%;
+        }
+
+        pre.prettyprint {
+            font-family: Monaco, Menlo, Consolas, 'Courier New', Courier, monospace, sans-serif;
+            background-color: #0E101E;
+            /* 背景色 */
+            border-top-left-radius: 0;
+            /* テーマの角丸の設定を上書き */
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .prettyprint ol {
+            margin: 0 1rem;
+            /* 間隔の調整 */
+            white-space: pre-wrap;
+            /* 折り返し */
+        }
+
+        .prettyprint ol.linenums>li {
+            list-style-type: decimal;
+            /* 行番号を1行ずつ表示 */
+            border-left: solid 1px #EBB15E;
+            /* 行番号との区切り線 */
+            padding-left: 0.8em;
+            /* 間隔の調整 */
+            color: #999;
+            /* 行番号の色 */
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>お久しぶりです。</p>
+    <br>
+    <p>マイナーチェンジはボチボチやってるんですけど表立った更新が出来てませんでした。</p>
+    <p>ファイル整理もできてないのでそのうちやりたいですね。</p>
+    <p>あとweb上で動く簡単なアプリケーションを実装予定です。うふふ</p>
+    <br>
+    <br>
+    <p>さて、Microsoft Wordで英単語を打つと先頭が大文字になってしまいます。<span style="color: #00cccc;">クソ仕様</span></p>
+    <p>頭の大文字くらい楽しなくてもShiftキー押しながらやるっちゅうねん!って人はゆっくりしていってね。</p>
+    <br>
+    <br>
+    <p>まずはWordを開きましょう。んでファイル画面で左下のオプションを選択してひらいてね。</p>
+    <div style="text-align: center;">
+        <img src="./img/memo_word_1.png" alt="result">
+    </div>
+    <br>
+    <p>次に開いたWordのオプション画面の左側にある文章校正を選択してオートコレクトのオプションのボタンを押してね。</p>
+    <p></p>
+    <div style="text-align: center;">
+        <img src="./img/memo_word_2.png" alt="result">
+    </div>
+    <p>オートコレクトの画面で「文の先頭文字を大文字にする」のチェックボックスのチェックをクリックして外そう。</p>
+    <p>これでばっちりですわよ!</p>
+    <div style="text-align: center;">
+        <img src="./img/memo_word_3.png" alt="result">
+    </div>
+
+    <a href="./blog_index.html">戻る</a>
+    <script src="../js/prettify.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            PR.prettyPrint();
+        });
+    </script>
+</body>
+
+</html>

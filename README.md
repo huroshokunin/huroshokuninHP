@@ -1,4 +1,4 @@
 # huroshokuninHP
-Hi! My name is huroshokunin.
-This page is shit.
+Hi! My name is huroshokunin.<br>
+This page is shit.<br>
 Good night ;)

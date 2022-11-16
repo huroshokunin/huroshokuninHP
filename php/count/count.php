@@ -57,7 +57,7 @@ echo "<div id=\"total\">";
 printf("%0{$keta}d", $total);
 echo "</div>";
 echo "<div id=\"count\">";
-echo "貴方は<span class=\"count\">{$today}</span>人目の訪問者です!!!!\n";
+echo "貴方は<span class=\"count\">{$total}</span>人目の訪問者です!!!!\n";
 echo "</div>";
 ?>
 </body>

@@ -1,10 +1,13 @@
 <Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
+    deny from all
 </Files>
+<FilesMatch "\.html$">
+    AddType application/x-httpd-php .html
+</FilesMatch>
 Options -Indexes
 ErrorDocument 404 ./errorpage/404.html
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^(huroshokunin\.net)(:80)? [NC]
 RewriteRule ^(.*) http://www.huroshokunin.net/$1 [R=301,L]
-DirectoryIndex index.html       
+DirectoryIndex index.html
 order deny,allow

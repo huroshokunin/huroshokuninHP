@@ -13376,12 +13376,14 @@
                     // 日本語化
                     url: "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Japanese.json",
                 },
-                paging: false, // ページングしない。
+                lengthMenu: [10, 20, 30, 40, 50],
+                // 件数のデフォルトの値を50にする
+                displayLength: 50,
+                scrollY: 500,
+                scrollX: true,
+                paging: true, // ページングしない。
                 ordering: true, // ソートする
                 mark: true, // 検索文字列ハイライト (by mark.js)
-
-
-
             });
         });
     </script>

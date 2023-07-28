@@ -4,6 +4,13 @@
 <FilesMatch "\.html$">
     AddType application/x-httpd-php .html
 </FilesMatch>
+
+# apache setting
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
 Options -Indexes
 ErrorDocument 404 ./errorpage/404.html
 RewriteEngine on

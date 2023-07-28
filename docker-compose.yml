@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: '3'
 
 services:
@@ -13,3 +14,14 @@ services:
       - "50000:80"
     depends_on:
       - db
+=======
+# docker-compose.yml
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "50000:80"
+>>>>>>> 522650ce1c0425f2cfa9a872df1cecdb03296f1d

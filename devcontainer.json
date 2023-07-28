@@ -1,0 +1,10 @@
+{
+    "name": "PHP & Apache",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "web",
+    "workspaceFolder": "/var/www/html",
+    "shutdownAction": "stopCompose",
+    "extensions": [
+        "felixfbecker.php-pack"
+    ]
+}

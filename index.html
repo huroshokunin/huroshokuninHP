@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/thumbnail.css">
     <title>huroshokunin's Homepage</title>
     <style>
         .hero {
@@ -15,41 +16,6 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-        }
-
-        .thumbnail-container {
-            position: relative;
-            overflow: hidden;
-            border-radius: 15px;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .thumbnail {
-            width: 100%;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .thumbnail:hover {
-            transform: scale(1.05);
-        }
-
-        .thumbnail::before {
-            background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
-        }
-
-        .thumbnail-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #000000;
-            text-align: center;
-            opacity: 0.4;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .thumbnail:hover .thumbnail-text {
-            opacity: 1;
         }
     </style>
 </head>
@@ -123,11 +89,17 @@
                 </div>
             </div>
         </div>
+        <div style="text-align:center; padding: 5hx;">
+            <h3>風呂職人のホームページにようこそ。</h3>
+            <h4>コンテンツ</h4>
+            <p>作成中</p>
+        </div>
     </main>
 
 
+
     <footer class="container-fluid bg-dark text-white p-3 mt-3">
-        <p class="text-center mb-0">© huroshokunin 2021-2022</p>
+        <p class="text-center mb-0">© huroshokunin 2021-2023</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

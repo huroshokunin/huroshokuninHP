@@ -25,7 +25,7 @@ function calculateRank() {
 
     returnRateRank = rankJudge(returnRateDiff);
     hitRateRank = rankJudge(hitRateDiff);
-    resultRank = resultrankJudge(returnRateDiff + hitRateDiff) / 2;
+    resultRank = resultrankJudge((returnRateDiff + hitRateDiff) / 2);
 
     // ランクによって背景色と文字色を変更
     returnRankElement.style.backgroundColor = rankColor(returnRateRank);
@@ -78,6 +78,7 @@ function calculateRank() {
                 return 'Error';
         }
     }
+
 
     function resultrankJudge(diff) {
         switch (true) {

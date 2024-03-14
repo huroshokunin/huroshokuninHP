@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="jp">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ランク計算器</title>
-<link rel="stylesheet" href="../css/baken_rank.css">
-<script src="./js/baken_rank.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランク計算器</title>
+    <link rel="stylesheet" href="../css/baken_rank.css">
+    <script src="./js/baken_rank.js"></script>
 </head>
+
 <body>
-<div class="container">
-    <h2>ランク計算器</h2>
-    <div>
-        <label for="hitRate">的中率 (%):</label>
-        <input type="number" id="hitRate" placeholder="的中率を入力" min="0">
+    <div class="container">
+        <h2>ランク計算器</h2>
+        <div>
+            <label for="hitRate">的中率 (%):</label>
+            <input type="number" id="hitRate" placeholder="的中率を入力" min="0">
+        </div>
+        <div>
+            <label for="returnRate">回収率 (%):</label>
+            <input type="number" id="returnRate" placeholder="回収率を入力" min="0">
+        </div>
+        <button onclick="calculateRank()">ランク計算</button>
+        <br>
+        <br>
+        <div>総合評価:<span id="resultRank"></span></div>
+        <div>的中率:<span id="hitRank"></span></div>
+        <div>回収率:<span id="returnRank"></span></div>
+        <!--
+        <br>
+        <br>
+        <div>的中率偏差値:<span id="hitRateDeviation"></span></div>
+        <div>回収率偏差値:<span id="returnRateDeviation"></span></div>
+    -->
     </div>
-    <div>
-        <label for="returnRate">回収率 (%):</label>
-        <input type="number" id="returnRate" placeholder="回収率を入力" min="0">
-    </div>
-    <button onclick="calculateRank()">ランク計算</button>
-    <br>
-    <div>総合評価:<span id="resultRank"></span></div>
-    <div>的中率:<span id="hitRank"></span></div>
-    <div>回収率:<span id="returnRank"></span></div>
-    <br>
-    <br>
-    <div>的中率偏差値:<span id="hitRateDeviation"></span></div>
-    <div>回収率偏差値:<span id="returnRateDeviation"></span></div>
-</div>
 </body>
+
 </html>

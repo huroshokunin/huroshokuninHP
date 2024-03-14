@@ -1,3 +1,9 @@
 .vscode/
 .gitignore
+app/board/
+app/config/
+app/myenv/
+app/static/
+app/static
+app/db.sqlite3
 huroshokunin.net.code-workspace

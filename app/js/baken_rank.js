@@ -15,8 +15,8 @@ function calculateRank() {
     const hitRateStdDev = 3;
 
     // 標準偏差の差を計算
-    const returnRateDiff = ((returnRate - averageReturnRate) / returnRateStdDev)*10+50;
-    const hitRateDiff = ((hitRate - averageHitRate) / hitRateStdDev)*10+50;
+    const returnRateDiff = (returnRate - averageReturnRate) / returnRateStdDev;
+    const hitRateDiff = (hitRate - averageHitRate) / hitRateStdDev;
 
     // それぞれのランク付け
     let returnRateRank = '';
@@ -44,8 +44,8 @@ function calculateRank() {
     hitRankElement.innerHTML = `${hitRateRank}`;
 
     // test項目
-    hitRateDeviation.innerHTML = `${Math.round(hitRateDiff * 100) / 100}`;
-    returnRateDeviation.innerHTML = `${Math.round(returnRateDiff * 100) / 100}`;
+    hitRateDeviation.innerHTML = `${Math.round(((hitRateDiff) * 10 + 50) * 100) / 100}`;
+    returnRateDeviation.innerHTML = `${Math.round(((returnRateDiff) * 10 + 50) * 100) / 100}`;
 
     // ランク付けと文字の背景色(文字は白抜き)
     // μ+3σ<=P : S, 金色

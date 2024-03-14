@@ -15,8 +15,8 @@ function calculateRank() {
     const hitRateStdDev = 3;
 
     // 標準偏差の差を計算
-    const returnRateDiff = (returnRate - averageReturnRate) / returnRateStdDev;
-    const hitRateDiff = (hitRate - averageHitRate) / hitRateStdDev;
+    const returnRateDiff = ((returnRate - averageReturnRate) / returnRateStdDev)*10+50;
+    const hitRateDiff = ((hitRate - averageHitRate) / hitRateStdDev)*10+50;
 
     // それぞれのランク付け
     let returnRateRank = '';

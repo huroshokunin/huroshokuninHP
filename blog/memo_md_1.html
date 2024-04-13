@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../skins/sunburst.css">
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        hr {
+            height: 2px;
+            background-color: #000;
+            border: none
+        }
+
+        pre {
+            max-height: 200px;
+            /* 最大高さを200ピクセルに設定 */
+            overflow: auto;
+            /* 内容がオーバーフローした場合にスクロールバーを表示 */
+            background-color: #f4f4f4;
+            /* 背景色 */
+            border: 1px solid #ddd;
+            /* 枠線 */
+            padding: 10px;
+            /* 内側の余白 */
+            font-family: monospace;
+            /* フォントスタイル */
+        }
+    </style>
+    <title>楽してスライド資料を作ろう</title>
+</head>
+
+<body>
+    <p>はーいこんにちは <span style="color: #00cccc;">2年ぶりの更新っす</span></p>
+    <p>大学でも社会でもしょっちゅうスライド資料を作る機会がありますね.</p>
+    <p>内容考えるのはまだしも、デザインや配置を考えるのは面倒っすね.</p>
+    <p>今回は<b>楽してスライド資料を作る方法</b>を紹介します.</p>
+    <br>
+    <img src="./img/oshiete_hakase.png" alt="おしえて博士" style="width: 600px">
+    <br>
+    <br>
+    <p>今回の主役は「Marp」.</p>
+    <ol>
+        <li>
+            <strong>Marpのインストール</strong>
+            <p>Marpの公式サイトや拡張機能の検索から、VSCodeのプラグインをゲットしましょ.</p>
+            <img src="./img/memo_md_1.png" alt="拡張機能の検索画面" width="700px">
+        </li>
+        <br>
+        <li>
+            <strong>Markdownで書く</strong>
+            <p>作りたい内容をそのままMarkdown形式で書いていく.</p>
+            <p>Markdownがわからない人は各自ググるか<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">こちら</a>.</p>
+            <pre>
+---
+marp: true
+theme: default
+---
+
+# やあやあ！
+
+GoodMorning
+- Hi
+- Hello
+
+---
+
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+---
+
+**太字**  
+*斜体*  
+~~取り消し線~~  
+`コード`  
+> 引用
+
+---
+
+- 順序なしリストアイテム1
+- 順序なしリストアイテム2
+- 順序なしリストアイテム3
+
+1. 順序付きリストアイテム1
+2. 順序付きリストアイテム2
+3. 順序付きリストアイテム3
+
+---
+
+[Google](https://www.google.com)
+
+| ヘッダー1 | ヘッダー2 | ヘッダー3 |
+|------------|------------|------------|
+| データ1    | データ2    | データ3    |
+| データ4    | データ5    | データ6    |
+
+
+- [ ] タスク1
+- [x] タスク2
+- [ ] タスク3
+<div style="color:red;">赤色のテキスト</div>
+            </pre>
+        </li>
+        <br>
+        <li>
+            <strong>プレビューしてみよう</strong>
+            <p>Marpでリアルタイムにプレビューしながら編集できるので、クソわかりやすいですわよ.</p>
+            <p>今回はこんな感じで書きました.</p>
+            <img src="./img/mamo_md_2.png" alt="プレビュー画面" width="700px">
+        </li>
+        <br>
+        <li>
+            <strong>エクスポートはボタン一つ</strong>
+            <p>完成したスライドはPowerPoint形式等でエクスポート可能. ボタンをポチっとなで完成ですわよ!</p>
+            <embed src="./img/md_test.pdf" width="700" height="500" type="application/pdf">
+        </li>
+    </ol>
+    <a href="./blog_index.html">戻る</a>
+</body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/japanese_character_counter.css">
+    <script src="./js/japanese_character_counter.js"></script>
+    <title>文字数カウンタβ</title>
+</head>
+
+<body>
+    <div>
+        <label for="japaneseText">文章を入力してください:</label><br>
+        <textarea id="japaneseText" rows="4" cols="50"></textarea>
+    </div>
+    <div id="boxOption">
+        <h4>オプション</h4>
+        <div>
+            <input type="checkbox" id="countNewLines">
+            <label for="countNewLines">改行を文字数としてカウントする</label>
+        </div>
+        <div>
+            <input type="checkbox" id="countSpaces">
+            <label for="countSpaces">スペースを文字数としてカウントする</label>
+        </div>
+        <div>
+            <input type="checkbox" name="enablecharComparison" id="enablecharComparison">
+            <label for="enablecharComparison">目標文字数との比較</label>
+            <br>
+            <label for="targetcharacterCount">目標文字数</label>
+            <input type="number" name="targetcharacterCount" id="targetcharacterCount">
+        </div>
+    </div>
+    <br>
+    <br>
+    <button onclick="countCharacters()">カウントボタン</button>
+    <div id="characterCount">文字数:</div>
+    <div id="characterComparison"></div>
+    <div id="recommendedComparison"></div>
+
+</body>
+
+</html>
